@@ -52,6 +52,6 @@ return {
 				},
 			},
 		})
-		vim.keymap.set("n", "<leader>c", ":Telescope neoclip<CR>", { desc = "[C]lipboard history" })
+		vim.keymap.set("n", "<leader>v", ":Telescope neoclip<CR>", { desc = "[C]lipboard history" })
 	end,
 }

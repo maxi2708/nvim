@@ -19,6 +19,10 @@ return {
           "lua_ls",
           "angularls",
           "svelte",
+          "jsonls",
+          "tailwindcss",
+          "ts_query_ls",
+          "cssls",
         },
         automatic_installation = true,
       })
@@ -47,6 +51,18 @@ return {
         capabilities = capabilities,
       })
       lspconfig.pyright.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.jsonls.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.tailwindcss.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.ts_query_ls.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.cssls.setup({
         capabilities = capabilities,
       })
       vim.diagnostic.config({
